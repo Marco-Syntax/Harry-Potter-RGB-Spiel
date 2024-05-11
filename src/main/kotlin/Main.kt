@@ -11,7 +11,7 @@ val ronWesley: RonWesley = RonWesley("Ron Wesley", 400, SpellMaster())
 val albusDumbledore: AlbusDumbledore = AlbusDumbledore("Albus Dumbledore", 400, SpellMaster())
 
 val lordVoldemort: LordVoldemort = LordVoldemort("Lord Voldemort", 600)
-val nagini: Nagini = Nagini("Enemies.Nagini", 300)
+val nagini: Nagini = Nagini("Nagini", 300)
 
 var heroes: MutableList<Wizard> = mutableListOf(harryPotter, ronWesley, albusDumbledore)
 var enemy: MutableList<DarkMage> = mutableListOf(lordVoldemort, nagini)
