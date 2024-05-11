@@ -1,3 +1,5 @@
+import actions.*
+
 fun startBattle(heroes: MutableList<Wizard>, enemy: MutableList<DarkMage>) {
     while (!gameOver) {
         println("         ----Runde:$round----")
@@ -16,7 +18,7 @@ fun startBattle(heroes: MutableList<Wizard>, enemy: MutableList<DarkMage>) {
             println("$blue${hero.name} startet seinen Angriff")
             // Überprüfen, ob der Zauberer noch Lebenspunkte hat um anzugreifen
             if (hero.hp > 0) {
-// Wenn Lord Voldemort besiegt wurde, dann Nagini angreifen
+// Wenn Lord Voldemort besiegt wurde, dann Enemies.Nagini angreifen
                 if (lordVoldemort.hp == 0 && nagini.hp > 0 && !nagini.isDead) {
                     println("${nagini.name} wird jetzt angegriffen")
                     hero.attack(nagini)
@@ -37,7 +39,7 @@ fun startBattle(heroes: MutableList<Wizard>, enemy: MutableList<DarkMage>) {
             //hier wird das spielende geprüft
             if (lordVoldemort.hp <= 0 && nagini.hp <= 0) {
                 println(
-                    "${magenta} _____    ___    __  __ ____   ______ ____                       __  __ ___     ____   ______ _   __   \n" +
+                    "$magenta _____    ___    __  __ ____   ______ ____                       __  __ ___     ____   ______ _   __   \n" +
                             "/__  /   /   |  / / / // __ ) / ____// __ \\                     / / / //   |   / __ ) / ____// | / /   \n" +
                             "  / /   / /| | / / / // __  |/ __/  / /_/ /                    / /_/ // /| |  / __  |/ __/  /  |/ /    \n" +
                             " / /__ / ___ |/ /_/ // /_/ // /___ / _, _/                    / __  // ___ | / /_/ // /___ / /|  /     \n" +
@@ -86,7 +88,7 @@ fun startBattle(heroes: MutableList<Wizard>, enemy: MutableList<DarkMage>) {
         } else if (nagini.hp <= 0) {
             nagini.isDead = true
         }
-//Wenn Lord Voldemort gestorben ist, ruft er Nagini zur Hilfe und Nagini führt FlächenZauber aus (Bonusattacke) aus die sie einmal ausführt
+//Wenn Lord Voldemort gestorben ist, ruft er Enemies.Nagini zur Hilfe und Enemies.Nagini führt FlächenZauber aus (Bonusattacke) aus die sie einmal ausführt
         if (lordVoldemort.hp <= 0 && !naginiBonusAttack) {
             println()
             lordVoldemort.isDead = true
@@ -94,7 +96,7 @@ fun startBattle(heroes: MutableList<Wizard>, enemy: MutableList<DarkMage>) {
             println("$red${lordVoldemort.name} ist gestorben und hat Nagini herbeigerufen.")
             println("$red Nagini taucht auf  führt eine Bonusattacke (Flächenzauber) aus die alle Zauberer verletzt.$reset")
             println()
-//Nagini führt ein Flächenzauber aus und fügt allen Zauberern Schaden zu
+//Enemies.Nagini führt ein Flächenzauber aus und fügt allen Zauberern Schaden zu
             nagini.getAreaSpell(harryPotter, ronWesley, albusDumbledore)
             Thread.sleep(2000)
             println()
@@ -102,7 +104,7 @@ fun startBattle(heroes: MutableList<Wizard>, enemy: MutableList<DarkMage>) {
 //Zusatz Attacke für voldemort, wenn hp 300 sind
         } else if (lordVoldemort.hp == 300 && !gameOver) {
 
-//Hier wird Nagini angreifen, wenn Lord Voldemort noch lebt und 300 hp ist eine zusatzattacke,
+//Hier wird Enemies.Nagini angreifen, wenn Lord Voldemort noch lebt und 300 hp ist eine zusatzattacke,
             //wenn sie jemanden beißt dann ist dieser vergiftet und ihm werden 10 % hp abgezogen
             println()
             Thread.sleep(2000)
@@ -153,7 +155,7 @@ fun startBattle(heroes: MutableList<Wizard>, enemy: MutableList<DarkMage>) {
             zaubererMitHeiltrank.bagPotion()
             println()
         }
-//Wenn Nagini ihre Bonusattacke gemacht (true) hat und Ron Wesley seine hp kleiner 300 und Albus Dumbeldore seine hp kleiner 200 sind, darf Harry Potter seine Spezialattacke ausführen
+//Wenn Enemies.Nagini ihre Bonusattacke gemacht (true) hat und Ron Wesley seine hp kleiner 300 und Albus Dumbeldore seine hp kleiner 200 sind, darf Harry Potter seine Spezialattacke ausführen
         if (naginiBonusAttack && nagini.hp > 0 && harryPotter.hp > 200) {
             //Überprüft ob Bonusattacke nicht true ist
             if (!harryPotter.attackBonus) {

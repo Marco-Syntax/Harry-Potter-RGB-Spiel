@@ -8,19 +8,19 @@
 </p>
 
 
-## Willkommen zu deinem Zauberer-Battle-Spiel, wo du ein Team von tapferen Zauberern gegen die finsteren Mächte von Lord Voldemort und Nagini führst. Mache dich bereit für aufregende Kämpfe und taktische Entscheidungen in der magischen Welt!
+## Willkommen zu deinem Zauberer-Battle-Spiel, wo du ein Team von tapferen Zauberern gegen die finsteren Mächte von Lord Voldemort und enemies.Nagini führst. Mache dich bereit für aufregende Kämpfe und taktische Entscheidungen in der magischen Welt!
 
 # 1. Teams
 
-* Du kontrollierst ein Team von Zauberern, bestehend aus Harry Potter, Ron Wesley und Albus Dumbledore. Diese sind in einer Liste namens "helden" gespeichert. Die dunklen Zauberer, angeführt von Lord Voldemort und Nagini, sind in der Liste "gegner" gespeichert.
+* Du kontrollierst ein Team von Zauberern, bestehend aus Harry Potter, Ron Wesley und Albus Dumbledore. Diese sind in einer Liste namens "helden" gespeichert. Die dunklen Zauberer, angeführt von Lord Voldemort und enemies.Nagini, sind in der Liste "gegner" gespeichert.
 
 ## 2. Spielrunden
 
-* Das Spiel wird in Runden gespielt. Jeder Zauberer in deinem Team führt in jeder Runde einen Angriff aus. Lord Voldemort und Nagini greifen ebenfalls an, solange die Gegner am Leben sind.
+* Das Spiel wird in Runden gespielt. Jeder Zauberer in deinem Team führt in jeder Runde einen Angriff aus. Lord Voldemort und enemies.Nagini greifen ebenfalls an, solange die Gegner am Leben sind.
 
 
 ## 3.Spielverlauf
-* Die Konsole gibt Informationen über Lebenspunkte und Angriffe der Zauberer aus. Wenn Lord Voldemort besiegt ist, ruft er Nagini zur Hilfe. Wird Nagini besiegt, endet das Spiel. Besondere Ereignisse: Lord Voldemort ruft Nagini zur Hilfe, Nagini führt Bonusattacken aus, und die Zauberer haben spezielle Angriffe.
+* Die Konsole gibt Informationen über Lebenspunkte und Angriffe der Zauberer aus. Wenn Lord Voldemort besiegt ist, ruft er enemies.Nagini zur Hilfe. Wird enemies.Nagini besiegt, endet das Spiel. Besondere Ereignisse: Lord Voldemort ruft enemies.Nagini zur Hilfe, enemies.Nagini führt Bonusattacken aus, und die Zauberer haben spezielle Angriffe.
 
 
 ## 4.Sieg oder Niderlage
@@ -36,8 +36,8 @@ Zauberer haben die Fähigkeit, sich von Naginis Gift zu erholen und erhalten per
 
 ## 6. Zusatz
 
-* Lord Voldemort ruft Nagini, wenn seine Lebenspunkte auf 0 fallen. Nagini führt Bonusattacken aus, und die Zauberer müssen geschickt reagieren
-und müssen auch Nagini besiegen
+* Lord Voldemort ruft enemies.Nagini, wenn seine Lebenspunkte auf 0 fallen. enemies.Nagini führt Bonusattacken aus, und die Zauberer müssen geschickt reagieren
+und müssen auch enemies.Nagini besiegen
 ## 7. Spielende
 * Das Spiel endet mit einer Siegesnachricht, wenn entweder dein Team oder die dunklen Zauberer gewonnen haben.
 Die Konsole gibt abschließend die Siegermannschaft aus.

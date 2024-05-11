@@ -1,3 +1,9 @@
+package spells
+
+import actions.DarkMage
+import actions.SpellMaster
+import actions.Wizard
+
 open class RonWesley(name: String, hp: Int, action: SpellMaster) : Wizard(name, hp, SpellMaster()) {
 
     //ruf seine Ratte Krätze und kann extra schaden verursachen

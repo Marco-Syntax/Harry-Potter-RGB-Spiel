@@ -1,4 +1,11 @@
-class Nagini (name:String,hp:Int): DarkMage (name, hp) {
+package enemies
+
+import actions.DarkMage
+import actions.Wizard
+import actions.green
+import actions.reset
+
+class Nagini (name:String, hp:Int): DarkMage(name, hp) {
 
     fun applySnakeAttack(target: Wizard) {
         val schlagenBiss = 100

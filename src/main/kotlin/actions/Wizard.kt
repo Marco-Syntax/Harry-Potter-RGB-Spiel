@@ -1,3 +1,5 @@
+package actions
+
 open class Wizard(
     var name: String, var hp: Int, var action: SpellMaster,
     var shieldActive: Boolean = false,

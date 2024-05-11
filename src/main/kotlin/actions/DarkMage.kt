@@ -1,3 +1,5 @@
+package actions
+
 open class DarkMage(var name: String, var hp: Int, var isDead: Boolean = false) {
     //Ist eine Methode die eine Random Attacke ausführt
     fun mysterySpell(auf: Wizard) {
@@ -35,9 +37,9 @@ open class DarkMage(var name: String, var hp: Int, var isDead: Boolean = false) 
     //Ist eine Methode
     fun callNagini() {
         if (hp <= 100) {
-            println("Nagini kämpft nun an deiner Seite")
+            println("Enemies.Nagini kämpft nun an deiner Seite")
         } else {
-            println("$name kann Nagini noch nicht rufen, weil die lebenspunkte noch zu hoch sind ")
+            println("$name kann Enemies.Nagini noch nicht rufen, weil die lebenspunkte noch zu hoch sind ")
         }
 
     }

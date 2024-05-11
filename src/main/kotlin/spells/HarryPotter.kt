@@ -1,3 +1,9 @@
+package spells
+
+import actions.DarkMage
+import actions.SpellMaster
+import actions.Wizard
+
 open class HarryPotter(name: String, hp: Int, action: SpellMaster) : Wizard(name, hp, SpellMaster()) {
 
     fun broomAttack(target: DarkMage) {
