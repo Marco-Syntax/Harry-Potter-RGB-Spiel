@@ -2,33 +2,33 @@ open class DarkMage(var name: String, var hp: Int, var isDead: Boolean = false) 
     //Ist eine Methode die eine Random Attacke ausführt
     fun mysterySpell(auf: Wizard) {
         if (auf.hp > 0) {
-            val angriffListe = listOf(
+            val attackList = listOf(
                 { fireAttack(auf)},
                 { deathCurse(auf)},
                 { darkMagicStrike(auf)},
             )
-            val mysterySpell = angriffListe.random()
+            val mysterySpell = attackList.random()
             mysterySpell()
         }
     }
 
     //Eine Attacke die Schaden verursacht
-    private fun fireAttack(ziel: Wizard) {
+    private fun fireAttack(target: Wizard) {
         val fireAttack = 150
-        if (ziel.hp > 0) {
-            println("$name hat Attacke Feuersturm gegen ${ziel.name} angewendet. Schaden: $fireAttack punkte")
-            ziel.hp -= fireAttack
-            println("${ziel.name} hat noch ${ziel.hp} lebenspunkte")
+        if (target.hp > 0) {
+            println("$name hat Attacke Feuersturm gegen ${target.name} angewendet. Schaden: $fireAttack punkte")
+            target.hp -= fireAttack
+            println("${target.name} hat noch ${target.hp} lebenspunkte")
         }
     }
 
     //Eine Attacke die Schaden verursacht
-    private fun deathCurse(ziel: Wizard) {
+    private fun deathCurse(target: Wizard) {
         val deathCurse: Int = 150
-        if (ziel.hp > 0) {
-            println("$name hat Attacke Fluch des Todes gegen ${ziel.name} angewendet. Schaden: $deathCurse punkte")
-            ziel.hp -= deathCurse
-            println("${ziel.name} hat noch ${ziel.hp} lebenspunkte")
+        if (target.hp > 0) {
+            println("$name hat Attacke Fluch des Todes gegen ${target.name} angewendet. Schaden: $deathCurse punkte")
+            target.hp -= deathCurse
+            println("${target.name} hat noch ${target.hp} lebenspunkte")
         }
     }
 
@@ -43,28 +43,28 @@ open class DarkMage(var name: String, var hp: Int, var isDead: Boolean = false) 
     }
 
     //Eine Attacke die Schaden verursacht
-    private fun darkMagicStrike(ziel: Wizard) {
+    private fun darkMagicStrike(target: Wizard) {
         val darkMagicStrike: Int = 150
-        if (ziel.hp > 0) {
-            println("$name hat Attacke Dementorenattacke gegen ${ziel.name} angewendet. Schaden: $darkMagicStrike punkte")
-            ziel.hp -= darkMagicStrike
-            println("${ziel.name} hat noch ${ziel.hp} lebenspunkte")
+        if (target.hp > 0) {
+            println("$name hat Attacke Dementorenattacke gegen ${target.name} angewendet. Schaden: $darkMagicStrike punkte")
+            target.hp -= darkMagicStrike
+            println("${target.name} hat noch ${target.hp} lebenspunkte")
         }
     }
 
     //Die Attacke greift alle Zauber an und verursacht schaden
     //Attacke fügt allen Zauber schaden zu
-    fun getAreaSpell(ziel1: Wizard, ziel2: Wizard, ziel3: Wizard) {
+    fun getAreaSpell(target1: Wizard, target2: Wizard, target3: Wizard) {
         val areaSpell: Int = 100
-        if (ziel1.hp > 0 || ziel2.hp > 0 || ziel3.hp > 0) {
+        if (target1.hp > 0 || target2.hp > 0 || target3.hp > 0) {
             println("$red$name hat Attacke Flächenzauber angewendet. Schaden: $areaSpell punkte$reset")
-            ziel1.hp -= areaSpell
-            ziel2.hp -= areaSpell
-            ziel3.hp -= areaSpell
-            println("$red${ziel1.name} hat $areaSpell Schaden erhalten und hat noch ${ziel1.hp} lebenspunkte")
-            println("${ziel2.name} hat $areaSpell Schaden erhalten und hat noch ${ziel2.hp} lebenspunkte")
-            println("${ziel3.name} hat $areaSpell Schaden erhalten und hat noch ${ziel3.hp} lebenspunkte$reset")
-        } else if (ziel1.hp == 0 || ziel2.hp == 0 || ziel3.hp == 0) {
+            target1.hp -= areaSpell
+            target2.hp -= areaSpell
+            target3.hp -= areaSpell
+            println("$red${target1.name} hat $areaSpell Schaden erhalten und hat noch ${target1.hp} lebenspunkte")
+            println("${target2.name} hat $areaSpell Schaden erhalten und hat noch ${target2.hp} lebenspunkte")
+            println("${target3.name} hat $areaSpell Schaden erhalten und hat noch ${target3.hp} lebenspunkte$reset")
+        } else if (target1.hp == 0 || target2.hp == 0 || target3.hp == 0) {
             println(" Zauber ist schon besiegt")
         }
 
