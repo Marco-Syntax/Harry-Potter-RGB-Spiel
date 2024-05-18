@@ -6,7 +6,7 @@
   <img src="img/img1.png" width="50%">
 </p>
 
-> **Hinweis**: Lies die Aufgabe aufmerksam. Versuche vor Beginn, die Aufgabe zu strukturieren. Notiere dir skizzenartig/in einem Klassendiagramm, was dein Programm braucht und setze deinen Plan Schritt für Schritt um.
+
 
 
 ## 1. Szenario
