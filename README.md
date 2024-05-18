@@ -1,6 +1,5 @@
 <h1 align="center">Der Magische Kampf</h1>
 <h2 align="center"> RPG Spiel</h2>
-<h3 align="center"> Abschlussaufagbe Marco Grimme</h3>
 <br>
 
 <p align="center">
