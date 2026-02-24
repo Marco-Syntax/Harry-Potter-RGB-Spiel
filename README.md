@@ -42,3 +42,4 @@ und müssen auch enemies.Nagini besiegen
 Die Konsole gibt abschließend die Siegermannschaft aus.
 
 ## Viel Spaß beim Spielen und möge die Magie mit dir sein
+java -jar game.jar
